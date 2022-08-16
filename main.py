@@ -325,5 +325,8 @@ async def on_message(message):
       await message.channel.send("Watch your language {}!".format(message.author.mention))
       return
 
-token = os.getenv('DISCORD_BOT_SECRET')
-client.run(token)
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+client.run(os.getenv('DISCORD_TOKEN'))
