@@ -249,7 +249,6 @@ def isBullyingHappening(data):
         swears = 0
         for x in temp:
             for i in range(len(swear_words)):
-                    print(type(x))
                     if swear_words[i] in x:
                          if "you" in x or "You" in x:
                             swears = swears + 1
@@ -267,7 +266,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
   global counter_bullying
-  if counter_bullying >= 10:
+  if counter_bullying >= 24:
       counter_bullying = 0
 
   counter_bullying = counter_bullying + 1
@@ -301,10 +300,8 @@ async def on_message(message):
     most_common = counter.most_common(1) # Change later
     print(most_common)
   
-    # TODO: search conversation starters for ones containing this
     final_common = most_common[0]
     ex_final = final_common[0]
-    print("Conversation starter subs", convo_subs)
     closest = difflib.get_close_matches(ex_final, convo_subs)
     print(closest)
     try: 
@@ -320,7 +317,7 @@ async def on_message(message):
   text = message.content
   for x in swear_words:
     if x in text:
-      if message.author.name == "NoRacism":
+      if message.author.name == "NoBullying":
         return
       await message.channel.send("Watch your language {}!".format(message.author.mention))
       return
