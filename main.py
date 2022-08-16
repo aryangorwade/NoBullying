@@ -325,4 +325,5 @@ async def on_message(message):
       await message.channel.send("Watch your language {}!".format(message.author.mention))
       return
 
-client.run("MTAwNzc0MjAxMTI1NzkyNTc0Mw.Gu6tDA.2e5D9Ehujl-qnpcoiHHoG-1_QcWrwGz6dBRvhU")
+token = os.getenv('DISCORD_BOT_SECRET')
+client.run(token)
