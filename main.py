@@ -1,5 +1,3 @@
-#https://realpython.com/how-to-make-a-discord-bot-python/#:~:text=There%20are%20two%20#key%20steps,and%20implements%20your%#20bot's%20behaviors
-
 # Setting up model ----------------------------------------------------
 import string # from some string manipulation tasks
 import nltk # natural language toolkit
