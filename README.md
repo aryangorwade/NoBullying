@@ -1,7 +1,5 @@
 # NoBullying
 
-Authors: Aryan Gorwade, Ayushman Chakraborty, Jasamarbir Arora, Pramukh Bhushan
-
 This discord bot stops all form of racism and harmful language in a Discord server's channel. It uses machine 
 learning to detect bullying and racism in a chat and steers the conversation away from the bullying after giving 
 warnings to the people involved by providing relevant conversation starters. 
