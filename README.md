@@ -12,6 +12,3 @@ away from hurtful language. The logistic regression model is trained on the trai
 resulting model is used on all Discord conversations after that. 
 
 It makes use of several libraries, including the following: nltk, sklearn, matplotlib, gensim, dotenv, pandas, etc.
-
-For more information, please check out https://devpost.com/software/racism-stopper and the video linked in the page. This bot 
-was created for the 2022 Impact hacks hackathon.
